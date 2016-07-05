@@ -81,9 +81,10 @@ public class Query {
         PageSize = pageSize;
     }
 
-    public String generateSign(String appSecret) throws Exception {
+    public String generateSign(String appSecret) throws Exception
+    {
         //按key(参数名称)进行排序
-        TreeMap paramTreeMap = new TreeMap();
+        TreeMap<String,Object> paramTreeMap = new TreeMap<>();
         paramTreeMap.put("Keyword", Keyword);
         paramTreeMap.put("TimeStamp", TimeStamp);
         paramTreeMap.put("SiteId", SiteId);

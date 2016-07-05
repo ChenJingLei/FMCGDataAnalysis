@@ -29,14 +29,14 @@ public class ProductItem {
     @Column(name = "price", columnDefinition = "double")
     private double Price;// 商品价格
 
-    @Column(name = "detailUrl", columnDefinition = "VARCHAR(MAX)")
+    @Column(name = "detailUrl", columnDefinition = "TEXT")
     private String DetailUrl;//商品详情链接地址
 
-    @Column(name = "imgUrl", columnDefinition = "VARCHAR(MAX)")
+    @Column(name = "imgUrl", columnDefinition = "TEXT")
     private String ImgUrl;//商品图片url地址
 
-    @Column(name = "sellNum", columnDefinition = "int")
-    private int SellNum;//商品销量
+    @Column(name = "saleNum", columnDefinition = "int")
+    private int SaleNum;//商品销量
 
     @Column(name = "platform", columnDefinition = "VARCHAR(50)", length = 50)
     private String Platform;//商品所属电商平台
@@ -44,6 +44,8 @@ public class ProductItem {
     @Column(name = "time", columnDefinition = "int")
     private int Time;
 
+    @Column(name = "productTypeId", columnDefinition = "int")
+    private Integer ProductTypeId;//主键
 //    @ManyToOne(cascade = {CascadeType.MERGE,CascadeType.REFRESH},optional = false)
 //    @JoinColumn(referencedColumnName = "ProductTypeId")
 //    private ProductType ProductType;//主键
@@ -107,12 +109,12 @@ public class ProductItem {
         ImgUrl = imgUrl;
     }
 
-    public int getSellNum() {
-        return SellNum;
+    public int getSaleNum() {
+        return SaleNum;
     }
 
-    public void setSellNum(int sellNum) {
-        SellNum = sellNum;
+    public void setSaleNum(int saleNum) {
+        SaleNum = saleNum;
     }
 
     public String getPlatform() {
@@ -131,7 +133,15 @@ public class ProductItem {
         Time = time;
     }
 
-//    public app.model.ProductType getProductType() {
+    public Integer getProductTypeId() {
+        return ProductTypeId;
+    }
+
+    public void setProductTypeId(Integer productTypeId) {
+        ProductTypeId = productTypeId;
+    }
+
+    //    public app.model.ProductType getProductType() {
 //        return ProductType;
 //    }
 //
@@ -142,16 +152,17 @@ public class ProductItem {
     @Override
     public String toString() {
         return "ProductItem{" +
-                "ProductId=" + ProductId +
+                "ProductId='" + ProductId + '\'' +
                 ", ProductSiteId='" + ProductSiteId + '\'' +
                 ", Title='" + Title + '\'' +
                 ", Brand='" + Brand + '\'' +
                 ", Price=" + Price +
                 ", DetailUrl='" + DetailUrl + '\'' +
                 ", ImgUrl='" + ImgUrl + '\'' +
-                ", SellNum=" + SellNum +
+                ", SaleNum=" + SaleNum +
                 ", Platform='" + Platform + '\'' +
                 ", Time=" + Time +
+                ", ProductTypeId=" + ProductTypeId +
                 '}';
     }
 }

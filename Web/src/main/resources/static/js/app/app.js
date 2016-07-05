@@ -13,15 +13,15 @@ FMCGSystemApp.config(['$routeProvider',
       when('/', {
         templateUrl: 'partials/main.html',
       }).
-      when('/add', {
-        templateUrl: 'partials/add.html',
-        controller: 'PhoneDetailCtrl'
+      when('/product', {
+        templateUrl: 'product/productlist.html',
+        controller: 'ProductListCtrl'
       }).
-      when('/find', {
-        templateUrl: 'partials/find.html',
-        controller: 'PhoneListCtrl'
+      when('/product/:ProductId', {
+        templateUrl: 'product/productdetail.html',
+        controller: 'ProductDetailCtrl'
       }).
       otherwise({
-        // redirectTo: '/main'
+        redirectTo: '/'
       });
   }]);

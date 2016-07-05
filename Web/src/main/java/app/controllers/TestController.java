@@ -12,13 +12,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class TestController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String showMainPage(Model model) {
-        model.addAttribute("welcome","欢迎您登陆本系统");
+    public String showMenu() {
         return "views/menu";
     }
 
     @RequestMapping(value = "/partials/main", method = RequestMethod.GET)
-    public String showMainPage1(Model model) {
+    public String showMainPage(Model model) {
         model.addAttribute("welcome","欢迎您登陆本系统");
         return "views/partials/main";
     }
