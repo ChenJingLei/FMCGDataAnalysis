@@ -22,6 +22,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="Api" />
+        <module name="DataSource" />
         <module name="Entity" />
         <module name="Module" />
         <module name="test" />
@@ -29,7 +31,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Entity" target="1.6" />
+      <module name="Api" target="1.8" />
+      <module name="DataSource" target="1.8" />
+      <module name="Entity" target="1.8" />
       <module name="FMCGDataAnalysis" target="1.6" />
       <module name="Module" target="1.6" />
       <module name="test" target="1.8" />

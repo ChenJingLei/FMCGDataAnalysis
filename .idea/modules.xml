@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Api/Api.iml" filepath="$PROJECT_DIR$/Api/Api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataSource/DataSource.iml" filepath="$PROJECT_DIR$/DataSource/DataSource.iml" />
       <module fileurl="file://$PROJECT_DIR$/Entity/Entity.iml" filepath="$PROJECT_DIR$/Entity/Entity.iml" />
       <module fileurl="file://$PROJECT_DIR$/FMCGDataAnalysis.iml" filepath="$PROJECT_DIR$/FMCGDataAnalysis.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module/Module.iml" filepath="$PROJECT_DIR$/Module/Module.iml" />

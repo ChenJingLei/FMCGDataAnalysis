@@ -13,6 +13,8 @@
         <module>Module</module>
         <module>Web</module>
         <module>Entity</module>
+        <module>DataSource</module>
+        <module>Api</module>
     </modules>
 
     <parent>
