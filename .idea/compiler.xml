@@ -22,12 +22,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="Entity" />
+        <module name="Module" />
         <module name="test" />
+        <module name="Web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="FMCGDataAnalysis" target="1.5" />
-      <module name="test" target="1.5" />
+      <module name="Entity" target="1.6" />
+      <module name="FMCGDataAnalysis" target="1.6" />
+      <module name="Module" target="1.6" />
+      <module name="test" target="1.8" />
+      <module name="Web" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

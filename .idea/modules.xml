@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Entity/Entity.iml" filepath="$PROJECT_DIR$/Entity/Entity.iml" />
       <module fileurl="file://$PROJECT_DIR$/FMCGDataAnalysis.iml" filepath="$PROJECT_DIR$/FMCGDataAnalysis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module/Module.iml" filepath="$PROJECT_DIR$/Module/Module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Web/Web.iml" filepath="$PROJECT_DIR$/Web/Web.iml" />
       <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
     </modules>
   </component>
