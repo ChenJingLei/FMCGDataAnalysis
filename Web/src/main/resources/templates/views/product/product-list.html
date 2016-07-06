@@ -28,7 +28,7 @@
                 <td>{{product.saleNum}}</td>
                 <td>{{product.evaluateNum}}</td>
                 <td>{{product.specification}}</td>
-                <th ng-bind="product.time"></th>
+                <th ng-bind="getLocalTime(product.time)"></th>
                 <td>
                     <a href="#/product/{{product.productId}}" class="btn btn-default btn-xs">查看详情</a>
                 </td>

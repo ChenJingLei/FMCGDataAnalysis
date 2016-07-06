@@ -36,7 +36,7 @@
                 <dt>评价数</dt>
                 <dd>{{product.evaluateNum}}</dd>
                 <dt>拉取时间</dt>
-                <dd>{{product.time}}</dd>
+                <dd ng-bind="getLocalTime(product.time)"></dd>
                 <dt>电商地址</dt>
                 <dd><a href="{{product.detailUrl}}">点击查看</a></dd>
             </dl>
