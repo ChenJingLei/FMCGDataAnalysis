@@ -1,7 +1,6 @@
 package app.service;
 
 import app.model.DataApi;
-import app.model.ProductItem;
 import app.model.Query;
 import app.model.QueryResponse;
 import app.repositories.ProductItemRepository;
@@ -30,6 +29,7 @@ public class ProductItemService {
 
     @PostConstruct
     public void init() {
+
     }
 
     public void CaptureData() throws Exception {
