@@ -33,7 +33,7 @@ public class ProductItemService {
     }
 
     public void CaptureData() throws Exception {
-        DataApi dataApi = new DataApi("200010","100a0b10603e1a453dd84743123029ab");
+        DataApi dataApi = new DataApi();
         Query query = new Query();
         query.setAppkey(dataApi.getAppKey());
         query.setKeyword(URLEncoder.encode("iphone6","UTF-8"));
