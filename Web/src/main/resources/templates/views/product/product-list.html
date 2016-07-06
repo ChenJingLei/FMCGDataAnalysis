@@ -11,21 +11,27 @@
     <div class="span1" style="margin: 20px 20px;">
         <table class="table">
             <tr>
+                <th>#</th>
                 <th>商品名称</th>
                 <th>价格</th>
                 <th>电商</th>
                 <th>销量</th>
+                <th>评价数</th>
+                <th>规格</th>
+                <th>抓取时间</th>
+                <th>操作</th>
             </tr>
             <tr ng-repeat="product in products | filter:query ">
+                <td ng-bind="$index+1">1</td>
                 <td>{{product.title}}</td>
                 <td>￥{{product.price}}</td>
                 <td>{{product.platform}}</td>
                 <td>{{product.saleNum}}</td>
+                <td>{{product.evaluateNum}}</td>
+                <td>{{product.specification}}</td>
+                <th ng-bind="product.time"></th>
                 <td>
-                    <button type="button" class="btn btn-default btn-xs" data-toggle="modal"
-                            data-target="#updateModal" ng-click="setPhone(phone)">
-                        查看详情
-                    </button>
+                    <a href="#/product/{{product.productId}}" class="btn btn-default btn-xs">查看详情</a>
                 </td>
 
             </tr>

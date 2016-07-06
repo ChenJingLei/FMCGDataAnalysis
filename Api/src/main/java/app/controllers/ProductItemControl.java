@@ -23,7 +23,7 @@ public class ProductItemControl {
         return productItemRepository.findAll();
     }
 
-    @RequestMapping(value = "/getId/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public ProductItem getId(@PathVariable("id") String id) {
         return productItemRepository.findOne(id);
     }

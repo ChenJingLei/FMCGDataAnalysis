@@ -4,7 +4,8 @@
 
 var FMCGSystemApp = angular.module('FMCGSystemApp', [
   'ngRoute',
-  'FMCGSystemControllers'
+  'FMCGSystemControllers',
+  'FMCGSystemServices'
 ]);
 
 FMCGSystemApp.config(['$routeProvider',
@@ -14,11 +15,11 @@ FMCGSystemApp.config(['$routeProvider',
         templateUrl: 'partials/main.html',
       }).
       when('/product', {
-        templateUrl: 'product/productlist.html',
+        templateUrl: 'product/product-list.html',
         controller: 'ProductListCtrl'
       }).
-      when('/product/:ProductId', {
-        templateUrl: 'product/productdetail.html',
+      when('/product/:productId', {
+        templateUrl: 'product/product-detail.html',
         controller: 'ProductDetailCtrl'
       }).
       otherwise({

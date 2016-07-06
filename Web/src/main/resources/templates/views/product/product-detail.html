@@ -1,0 +1,45 @@
+<div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">产品详情</div>
+    <div class="panel-body">
+        <div class="thumbnail">
+            <img ng-src="{{product.imgUrl}}">
+        </div>
+    </div>
+    <h1>{{product.title}}</h1>
+
+    <ul class="specs">
+        <li>
+            <span>详细信息</span>
+            <dl>
+                <dt>商品ID</dt>
+                <dd>{{product.productId}}</dd>
+                <dt>电商商品ID</dt>
+                <dd>{{product.productSiteId}}</dd>
+                <dt>商品规格</dt>
+                <dd>{{product.specification}}</dd>
+                <dt>商品品牌</dt>
+                <dd>{{product.brand}}</dd>
+                <dt>商品品类</dt>
+                <dd>{{product.productTypeId}}</dd>
+            </dl>
+        </li>
+        <li>
+            <span>数据信息</span>
+            <dl>
+                <dt>价格</dt>
+                <dd>{{product.price}}</dd>
+                <dt>平台</dt>
+                <dd>{{product.platform}}</dd>
+                <dt>销量</dt>
+                <dd>{{product.saleNum}}</dd>
+                <dt>评价数</dt>
+                <dd>{{product.evaluateNum}}</dd>
+                <dt>拉取时间</dt>
+                <dd>{{product.time}}</dd>
+                <dt>电商地址</dt>
+                <dd><a href="{{product.detailUrl}}">点击查看</a></dd>
+            </dl>
+        </li>
+    </ul>
+</div>

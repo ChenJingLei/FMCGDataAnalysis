@@ -3,6 +3,7 @@ package app.model;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.Date;
 
 /**
  * Created by cjl20 on 2016/7/4.
@@ -38,11 +39,17 @@ public class ProductItem {
     @Column(name = "saleNum", columnDefinition = "int")
     private int SaleNum;//商品销量
 
+    @Column(name = "evaluateNum", columnDefinition = "int")
+    private int EvaluateNum;//商品评价数
+
+    @Column(name = "specification", columnDefinition = "VARCHAR(50)", length = 50)
+    private int Specification;//规格
+
     @Column(name = "platform", columnDefinition = "VARCHAR(50)", length = 50)
     private String Platform;//商品所属电商平台
 
-    @Column(name = "time", columnDefinition = "int")
-    private int Time;
+    @Column(name = "time", columnDefinition = "BIGINT")
+    private long Time = new Date().getTime();//抓取时间
 
     @Column(name = "productTypeId", columnDefinition = "int")
     private Integer ProductTypeId;//主键
@@ -125,11 +132,11 @@ public class ProductItem {
         Platform = platform;
     }
 
-    public int getTime() {
+    public long getTime() {
         return Time;
     }
 
-    public void setTime(int time) {
+    public void setTime(long time) {
         Time = time;
     }
 
@@ -139,6 +146,22 @@ public class ProductItem {
 
     public void setProductTypeId(Integer productTypeId) {
         ProductTypeId = productTypeId;
+    }
+
+    public int getEvaluateNum() {
+        return EvaluateNum;
+    }
+
+    public void setEvaluateNum(int evaluateNum) {
+        EvaluateNum = evaluateNum;
+    }
+
+    public int getSpecification() {
+        return Specification;
+    }
+
+    public void setSpecification(int specification) {
+        Specification = specification;
     }
 
     //    public app.model.ProductType getProductType() {
@@ -160,6 +183,8 @@ public class ProductItem {
                 ", DetailUrl='" + DetailUrl + '\'' +
                 ", ImgUrl='" + ImgUrl + '\'' +
                 ", SaleNum=" + SaleNum +
+                ", EvaluateNum=" + EvaluateNum +
+                ", Specification=" + Specification +
                 ", Platform='" + Platform + '\'' +
                 ", Time=" + Time +
                 ", ProductTypeId=" + ProductTypeId +
