@@ -43,7 +43,7 @@ public class ProductItem {
     private int EvaluateNum;//商品评价数
 
     @Column(name = "specification", columnDefinition = "VARCHAR(50)", length = 50)
-    private int Specification;//规格
+    private String Specification;//规格
 
     @Column(name = "platform", columnDefinition = "VARCHAR(50)", length = 50)
     private String Platform;//商品所属电商平台
@@ -156,15 +156,14 @@ public class ProductItem {
         EvaluateNum = evaluateNum;
     }
 
-    public int getSpecification() {
+    public String getSpecification() {
         return Specification;
     }
 
-    public void setSpecification(int specification) {
+    public void setSpecification(String specification) {
         Specification = specification;
     }
-
-    //    public app.model.ProductType getProductType() {
+//    public app.model.ProductType getProductType() {
 //        return ProductType;
 //    }
 //

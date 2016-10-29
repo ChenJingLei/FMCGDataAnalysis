@@ -33,7 +33,7 @@ public class ProductItemService {
     }
 
     public void CaptureData() throws Exception {
-        DataApi dataApi = new DataApi();
+        DataApi dataApi = new DataApi("200010","100a0b10603e1a453dd84743123029ab");
         Query query = new Query();
         query.setAppkey(dataApi.getAppKey());
         query.setKeyword(URLEncoder.encode("iphone6","UTF-8"));
@@ -51,7 +51,7 @@ public class ProductItemService {
         String responseStr = restTemplate.postForObject("http://api.simplybrand.com/QueryProductService/Query",request, String.class);
 //        System.out.println(responseStr);
         QueryResponse response = gson.fromJson(responseStr,QueryResponse.class);
-        System.out.println(response.getResponseResult().get(0).toString());
+//        System.out.println(response.getResponseResult().get(0).toString());
         productItemRepository.save(response.getResponseResult());
 
     }

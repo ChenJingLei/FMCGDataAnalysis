@@ -6,8 +6,11 @@
     <file url="file://$PROJECT_DIR$/DataSource" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Entity" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Module" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TestWebMagic" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TestWebMagicFMCGAlgorithm" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/webmagic-selenium" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

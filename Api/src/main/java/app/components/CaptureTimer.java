@@ -21,10 +21,10 @@ public class CaptureTimer {
 
     @Scheduled(fixedRate = 5000)
     public void CaptureData() {
-        System.out.println("The time is now " + dateFormat.format(new Date()));
+        System.out.println("The time is now " + dateFormat.format(new Date()) + new Date().getTime());
 
         try {
-//            productItemService.CaptureData();
+            productItemService.CaptureData();
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }

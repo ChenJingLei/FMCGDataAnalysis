@@ -18,7 +18,7 @@ public class WebMvcConfig {
         return new WebMvcConfigurerAdapter() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                String url = "http://localhost:8089";
+                String url = "http://120.27.119.161:8089";
                 registry.addMapping("/**").allowedOrigins(url);
                 registry.addMapping("/**/**").allowedOrigins(url);
                 registry.addMapping("/**/**/**").allowedOrigins(url);

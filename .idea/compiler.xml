@@ -27,7 +27,10 @@
         <module name="Entity" />
         <module name="Module" />
         <module name="test" />
+        <module name="TestWebMagic" />
+        <module name="TestWebMagicFMCGAlgorithm" />
         <module name="Web" />
+        <module name="webmagic-selenium" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -37,7 +40,10 @@
       <module name="FMCGDataAnalysis" target="1.6" />
       <module name="Module" target="1.6" />
       <module name="test" target="1.8" />
-      <module name="Web" target="1.6" />
+      <module name="TestWebMagic" target="1.6" />
+      <module name="TestWebMagicFMCGAlgorithm" target="1.8" />
+      <module name="Web" target="1.8" />
+      <module name="webmagic-selenium" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
